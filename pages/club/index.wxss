@@ -1,0 +1,20 @@
+.nav {
+  text-align: center;
+  width: 100%;
+}
+
+.icon-button {
+  flex-direction: column
+}
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-text {
+  font-size: 16px;
+}
+.nav-item {
+  flex-direction: row;
+  display: flex
+}

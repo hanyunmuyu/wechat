@@ -1,0 +1,53 @@
+.view-list{
+    width: 100%;
+    margin-top: 8px;
+}
+.recommend {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+.recommend navigator{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.recommend .title{
+    flex: 2;
+    font-size: 16px;
+}
+.recommend-left{
+    display: flex;
+    flex-direction: row;
+    line-height: 18px;
+    height: 18px;
+}
+.recommend .recommend-left image{
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 6px;
+}
+.recommend .more image{
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 6px;
+}
+.scroll-x {
+    white-space: nowrap;
+    display: flex
+}
+.scroll-x .scroll-view-item {
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.scroll-x .scroll-view-item text{
+    font-size: 16px;
+}
+.scroll-view-item image{
+    height: 100px;
+    width: 100px;
+}

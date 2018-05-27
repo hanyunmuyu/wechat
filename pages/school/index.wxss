@@ -1,0 +1,85 @@
+.swiper{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.swiper image{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+
+.nav {
+    text-align: center;
+    width: 100%;
+}
+
+.icon-button {
+    flex-direction: column
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+.icon-text {
+    font-size: 16px;
+}
+
+.nav-item {
+    flex-direction: row;
+    display: flex
+}
+
+.recommend {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+.recommend navigator{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.recommend .title{
+    flex: 2;
+    font-size: 16px;
+}
+.recommend-left{
+    display: flex;
+    flex-direction: row;
+    line-height: 18px;
+    height: 18px;
+}
+.recommend .recommend-left image{
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 6px;
+}
+.recommend .more image{
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 6px;
+}
+.scroll-x {
+    white-space: nowrap;
+    display: flex
+}
+.scroll-x .scroll-view-item {
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.scroll-x .scroll-view-item text{
+    font-size: 16px;
+}
+.scroll-view-item image{
+    height: 70px;
+    width: 70px;
+}

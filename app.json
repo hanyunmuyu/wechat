@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/explore/index",
+    "pages/club-list/index",
+    "pages/index/index",
+    "pages/school-detail/index",
+    "pages/school/index",
+    "pages/school-player/index",
+    "pages/school-list/index",
+    "pages/club/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "red",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "晒友团",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#13227a",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home_selected.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "关注"
+      },
+      {
+        "selectedIconPath": "images/explore_selected.png",
+        "iconPath": "images/explore.png",
+        "pagePath": "pages/explore/index",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "images/msg_selected.png",
+        "iconPath": "images/msg.png",
+        "pagePath": "pages/index/index",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "images/user_selected.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

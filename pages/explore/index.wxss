@@ -1,0 +1,94 @@
+@import "./weui.wxss";
+
+.search-view {
+    padding: 10px;
+    flex-direction: row;
+    display: flex
+}
+
+.search-text {
+    flex: 1;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+.icon-text {
+    font-size: 16px;
+}
+
+.userinfo-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.nav {
+    text-align: center;
+    width: 100%;
+}
+
+.icon-button {
+    flex-direction: column
+}
+
+.nav-item {
+    flex-direction: row;
+    display: flex
+}
+
+.list-item {
+    margin: 10px;
+    flex-direction: column
+}
+
+.list-item-body {
+    flex-direction: row
+}
+
+.list-item-header {
+    flex-direction: row;
+    display: flex
+}
+
+.list-item-user {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 20px
+}
+
+.list-item-title {
+    font-size: 18px;
+}
+
+.list-item-content {
+    font-size: 15px;
+}
+
+.footer-item {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

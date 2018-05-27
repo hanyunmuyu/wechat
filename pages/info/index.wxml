@@ -1,0 +1,81 @@
+<view class="container">
+    <view class="pic">
+        <block>
+            <image mod="aspectFit" src="{{info.pic}}">
+            </image>
+        </block>
+    </view>
+    <view class="nav">
+        <view wx:for="{{nav}}" wx:for-item="item" wx:for-index="index" bindtap="tab" data-index="{{index}}" wx:key="index">
+            <button wx:if="{{index===navIndex}}" class="active">{{item.title}}</button>
+            <button wx:else>{{item.title}}</button>
+        </view>
+    </view>
+    <view class="tab">
+        <view class="info" wx:if="{{navIndex===0}}">
+            <view class="detail">
+                <text>名称：{{info.name}}</text>
+            </view>
+            <view  bindtap="callPhone" data-phone="{{info.phone}}" class="detail">
+                <text>电话：{{info.phone}}</text>
+            </view>
+            <view bindtap="callTel"  data-tel="{{info.tel}}"  class="detail">
+                <text>固话：{{info.tel}}</text>
+            </view>
+            <view class="detail">
+                <text>地址：{{info.address}}</text>
+            </view>
+            <map id="map"  scale="14"  longitude="{{info.longitude}}" latitude="{{info.latitude}}" class="map" show-location></map>
+        </view>
+        <view  class="info" wx:elif="{{navIndex===1}}">
+            <view class="detail">
+                <text>名称：{{serviceInfo.name}}</text>
+            </view>
+            <view class="detail">
+                <text>责任人：{{serviceInfo.userName}}</text>
+            </view>
+            <view  bindtap="callPhone" data-phone="{{serviceInfo.phone}}"  class="detail">
+                <text>电话：{{serviceInfo.phone}}</text>
+            </view>
+            <view bindtap="callTel"   data-tel="{{serviceInfo.tel}}"  class="detail">
+                <text>固话：{{serviceInfo.tel}}</text>
+            </view>
+        </view>
+        <view  class="info" wx:else>
+            <view class="user-list">
+                <view>
+                    <text class="tag">
+                        管理员：
+                    </text>
+                </view>
+                <view class="user-item">
+                    <view class="user-detail" wx:for="{{userList.manager}}" wx:for-index="index" wx:key="{{index}}">
+                        <view class="user-avatar">
+                            <image  mod="aspectFit"  class="avatar" src="{{item.avatar}}"></image>
+                        </view>
+                        <view class="user-info">
+                            <text>{{item.name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="user-list">
+                <view>
+                    <text class="tag">
+                        居民：
+                    </text>
+                </view>
+                <view class="user-item">
+                    <view class="user-detail" wx:for="{{userList.users}}" wx:for-index="index" wx:key="{{index}}">
+                        <view class="user-avatar">
+                            <image  mod="aspectFit"  class="avatar" src="{{item.avatar}}"></image>
+                        </view>
+                        <view class="user-info">
+                            <text>{{item.name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

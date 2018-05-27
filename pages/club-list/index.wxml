@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="view-list" wx:for="{{clubList}}" wx:for-item="clubItem" wx:for-index="index" wx:key="{{index}}">
+        <view class="recommend" bindtap="moreSchool">
+            <navigator url="/pages/school-list/index">
+                <view class="title">
+                    <view class="recommend-left">
+                        <image src="{{clubItem.icon}}"></image>
+                        <text>{{clubItem.categoryName}}</text>
+                    </view>
+                </view>
+                <view class="more">
+                    <image src="/images/more.png"></image>
+                </view>
+            </navigator>
+        </view>
+        <scroll-view scroll-x="true" class="scroll-x">
+            <view wx:for-items="{{clubItem.dataList}}" class="scroll-view-item" wx:for-index="index" wx:key="{{index}}">
+                <navigator url="/pages/school-detail/index?id={{index}}">
+                    <image src="{{item.img}}" mode="aspectFit"></image>
+                    <text>
+                        {{item.name}}
+                    </text>
+                </navigator>
+            </view>
+        </scroll-view>
+    </view>
+</view>

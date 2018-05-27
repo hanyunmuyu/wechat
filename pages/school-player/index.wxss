@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+}
+.header .title{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.header .avatar{
+    display: flex;
+    flex-direction: row;
+}
+.header .avatar image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.header .avatar text{
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 18px;
+}
+.header .avatar .notice{
+    color: white;
+    background-color: #179B16;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(50%);
+}
+.header .header-footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.header .header-footer text{
+    margin-left: 8px;
+}
+.header .header-footer .source{
+    margin-left: 18px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.header .header-footer .source image{
+    width: 16px;
+    height: 16px;
+}

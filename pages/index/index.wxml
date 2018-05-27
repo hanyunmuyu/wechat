@@ -1,0 +1,33 @@
+<view class="container">
+    <scroll-view scroll-x="true" class="scroll-x"  bindscroll="scroll" scroll-into-view="{{'id-'+activeIndex}}">
+        <view wx:for-items="{{areaList}}" class="scroll-view-item" wx:for-index="index" wx:key="{{index}}" id="{{'id-'+index}}" data-id="{{index}}" catchtap="click">
+            <view wx:if="{{activeIndex===index}}">
+                <text class="text-active">
+                    {{item.name}}
+                </text>
+                <view class="active"></view>
+            </view>
+            <view wx:else>
+                <text>
+                    {{item.name}}
+                </text>
+                <view></view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="list-item" wx:for-items="{{dataList}}" wx:for-index="index" wx:key="{{index}}">
+        <view class="list-item-content">
+            <view class="logo">
+                <image src="{{item.img}}"  mode='aspectFit' ></image>
+            </view>
+            <view class="detail">
+                <text class="title">{{item.name+item.id}}</text>
+                <text class="description">{{item.description}}</text>
+            </view>
+        </view>
+        <view class="list-item-footer">
+            <text>111：关注</text>
+            <text>222：社团</text>
+        </view>
+    </view>
+</view>

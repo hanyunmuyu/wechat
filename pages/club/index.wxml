@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="nav">
+        <view class="nav-item">
+            <navigator  wx:for="{{nav}}" wx:for-item="item" wx:for-index="index" style='flex:1' bindtap='go' wx:key="{{index}}" url="{{item.url}}">
+                <lable>
+                    <view class="icon-button">
+                        <view>
+                            <image class="icon" src="{{item.src}}" mode='aspectFit' wx:key="*this"></image>
+                        </view>
+                        <view>
+                            <text class="icon-text">{{item.text}}</text>
+                        </view>
+                    </view>
+                </lable>
+            </navigator>
+        </view>
+    </view>
+
+    <view>
+        
+    </view>
+</view>

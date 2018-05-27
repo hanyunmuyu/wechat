@@ -1,0 +1,53 @@
+.content{
+ width: 100%;
+    margin: 0 10px;
+}
+.search-view {
+    padding: 10px;
+    flex-direction: row;
+    display: flex
+}
+
+.search-text {
+    flex: 1;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+}
+
+.icon-text {
+    font-size: 16px;
+}
+
+
+.list-item{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    align-items: center;
+    margin: 10px auto;
+}
+.list-item navigator{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.list-item .pic{
+    flex: 1;
+}
+.list-item .pic image{
+    width: 100%;
+}
+.list-item .info{
+    flex: 2;
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.list-item .info text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

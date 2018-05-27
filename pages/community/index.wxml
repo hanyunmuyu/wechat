@@ -1,0 +1,35 @@
+<view class="content">
+    <view class="search-view">
+        <view>
+            <image class="icon" src='/images/search.png'></image>
+        </view>
+        <view class="search-text">
+            <input placeholder="搜索小区" auto-focus/>
+        </view>
+    </view>
+    <view class="list-item" wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <navigator url="../info/index?id={{item.id}}">
+            <view class="pic">
+                <image src="{{item.pic}}"  mode="scaleToFill" ></image>
+            </view>
+            <view class="info">
+                <view>
+                    <text>名称：</text>
+                    <text>{{item.name}}</text>
+                </view>
+                <view>
+                    <text>地址：</text>
+                    <text>{{item.address}}</text>
+                </view>
+                <view catchtap="callPhone" data-phone="{{item.phone}}">
+                    <text>电话：</text>
+                    <text>{{item.phone}}</text>
+                </view>
+                <view catchtap="callTel" data-tel="{{item.tel}}">
+                    <text>固话：</text>
+                    <text>{{item.tel}}</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
+</view>

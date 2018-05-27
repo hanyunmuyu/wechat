@@ -1,0 +1,46 @@
+<view class="search-view">
+  <!--<view>-->
+    <!--<image class="icon" src='/images/search.png'></image>-->
+  <!--</view>-->
+  <!--<view class="search-text">-->
+    <!--<input placeholder="搜索高校、社团、同学" auto-focus/>-->
+  <!--</view>-->
+</view>
+<view class="nav">
+  <view class="nav-item">
+      <navigator  wx:for="{{nav}}" wx:for-item="item" wx:for-index="index" style='flex:1' bindtap='go' wx:key="{{index}}" url="{{item.url}}">
+        <lable>
+            <view class="icon-button">
+              <view>
+                <image class="icon" src="{{item.src}}" mode='aspectFit' wx:key="*this"></image>
+              </view>
+              <view>
+                <text class="icon-text">{{item.text}}</text>
+              </view>
+            </view>
+        </lable>
+      </navigator>
+  </view>
+</view>
+<view class='list-item' wx:for="{{dataList}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+  <view class="list-item-body">
+    <view class="list-item-header">
+      <view>
+        <image class='userinfo-avatar' mode="cover" src="{{item.avatar}}" wx:key="*this"></image>
+      </view>
+      <view class="list-item-user">
+        <text>{{item.userName}}</text>
+      </view>
+    </view>
+    <view>
+      <text class="list-item-title">{{item.title}}</text>
+    </view>
+    <view class="list-item-content">
+      {{item.content}}
+    </view>
+    <view>
+      <image class="footer-item" src='/images/comments.png'></image>{{item.clickNum}}
+      <image class="footer-item" src='/images/favorite.png'></image>{{item.favoriteNum}}
+    </view>
+  </view>
+</view>
