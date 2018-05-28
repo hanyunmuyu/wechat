@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/explore/index",
+    "pages/club/index",
     "pages/club-list/index",
     "pages/index/index",
     "pages/school-detail/index",
     "pages/school/index",
     "pages/school-player/index",
     "pages/school-list/index",
-    "pages/club/index",
     "pages/user/index"
   ],
   "window": {

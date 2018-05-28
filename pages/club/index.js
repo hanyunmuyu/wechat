@@ -1,26 +1,26 @@
-//logs.js
-const util = require('../../utils/util.js')
-
 Page({
     data: {
-        nav: [
+        tabIndex: 0,
+        tabList: [
             {
-                src: '/images/school.png',
-                text: '校园',
-                url: "/pages/school/index"
+                id: 1,
+                title: "动态"
             },
             {
-                src: '/images/club.png',
-                text: '社团',
-                url: "/pages/club/index"
+                id: 1,
+                title: "最新"
+            },
+            {
+                id: 1,
+                title: "成员"
             }
-        ],
+        ]
     },
-    onLoad: function () {
+    select: function (e) {
+        let id = e.currentTarget.dataset.id
+        // console.log(e.currentTarget.dataset.id)
         this.setData({
-            logs: (wx.getStorageSync('logs') || []).map(log => {
-                return util.formatTime(new Date(log))
-            })
+            tabIndex: id
         })
     }
 })
