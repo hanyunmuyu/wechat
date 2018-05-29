@@ -190,7 +190,7 @@ Page({
     },
     onLoad: function () {
         wx.setNavigationBarTitle({
-            title: '河南工业大学-社团'
+            title: '社团-列表'
         })
     }
 })

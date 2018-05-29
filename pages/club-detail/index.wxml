@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="tab">
+        <view wx:for-items="{{tabList}}" class="tab-item" wx:for-index="index" wx:key="{{index}}" data-id="{{index}}" bindtap="select">
+            <view wx:if="{{tabIndex===index}}">
+                <text class="text-active">
+                    {{item.title}}
+                </text>
+                <view class="active"></view>
+            </view>
+            <view wx:else>
+                <text>
+                    {{item.title}}
+                </text>
+                <view></view>
+            </view>
+        </view>
+    </view>
+    <view class="tab-detail">
+        <text>这里是详情</text>
+    </view>
+</view>
