@@ -1,3 +1,32 @@
+.club-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+.club-header .club-body{
+    display: flex;
+    flex-direction: row;
+}
+.club-header .logo{
+    width: 88px;
+    height: 88px;
+}
+.club-detail{
+    margin-left: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+.club-detail text{
+    margin-left: 6px;
+}
+.club-footer{
+    margin-top: 6px;
+    width: 100%;
+}
+
 .tab {
     width: 100%;
     display: flex;
