@@ -4,15 +4,11 @@ Page({
         tabList: [
             {
                 id: 1,
-                title: "社团经典"
+                title: "动态"
             },
             {
                 id: 1,
-                title: "社团动态"
-            },
-            {
-                id: 1,
-                title: "社团成员"
+                title: "成员"
             }
         ]
     },
