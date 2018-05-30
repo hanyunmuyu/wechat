@@ -45,7 +45,36 @@
             </view>
         </view>
     </view>
-    <view class="tab-detail">
-        <text>这里是详情</text>
+    <view wx:if="{{tabIndex===1}}">
+
+        <view class="title"><text>管理员（4）</text></view>
+        <view class="tab-detail">
+            <view wx:for-items="{{[1,1,1]}}" class="list-item">
+                <view class="list-item-img">
+                    <image mod="cover" class="logo"
+                           src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527651936371&di=4adbcd1a13da21bae489a750bc72eaae&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca807e7845fe922397dda14483ad.jpg"></image>
+                </view>
+                <view class="list-item-info">
+                    <view><text>昵称：寒云</text></view>
+                    <view><text>昵称：寒云</text></view>
+                    <view><text>座右铭：卑鄙是卑鄙的通行证 高尚是高尚的墓志铭</text></view>
+                </view>
+            </view>
+        </view>
+        <view class="title"><text>成员（16）</text></view>
+        <view class="tab-detail">
+            <view wx:for-items="{{[1,1,1,11,1,1,1,1]}}" class="list-item">
+                <view class="list-item-img">
+                    <image mod="cover" class="logo"
+                           src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527651936371&di=4adbcd1a13da21bae489a750bc72eaae&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca807e7845fe922397dda14483ad.jpg"></image>
+                </view>
+                <view class="list-item-info">
+                    <view><text>昵称：寒云</text></view>
+                    <view><text>昵称：寒云</text></view>
+                    <view><text>座右铭：卑鄙是卑鄙的通行证 高尚是高尚的墓志铭</text></view>
+                </view>
+            </view>
+        </view>
+
     </view>
 </view>

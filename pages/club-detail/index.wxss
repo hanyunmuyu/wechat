@@ -1,28 +1,33 @@
-.club-header{
+.club-header {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 6px;
 }
-.club-header .club-body{
+
+.club-header .club-body {
     display: flex;
     flex-direction: row;
 }
-.club-header .logo{
+
+.club-header .logo {
     width: 88px;
     height: 88px;
 }
-.club-detail{
+
+.club-detail {
     margin-left: 8px;
     flex: 1;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
-.club-detail text{
+
+.club-detail text {
     margin-left: 6px;
 }
-.club-footer{
+
+.club-footer {
     margin-top: 6px;
     width: 100%;
 }
@@ -37,18 +42,49 @@
     flex: 1;
     text-align: center;
 }
-.tab .tab-item .active{
+
+.tab .tab-item .active {
     background: #1296db;
     width: 100%;
     height: 2px;
 }
+
 .text-active {
     color: #1296db;
 }
-.tab-detail{
+.title{
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+    font-size: 16px;
+}
+.tab-detail {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 15px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.tab-detail .list-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.tab-detail .list-item .list-item-img {
+    width: 60px;
+    height: 60px;
+}
+
+.tab-detail .list-item .list-item-img image {
+    width: 60px;
+    height: 60px;
+}
+
+.list-item-info {
+    margin-left: 9px;
 }
