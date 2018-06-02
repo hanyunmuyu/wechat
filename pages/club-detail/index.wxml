@@ -45,17 +45,26 @@
             </view>
         </view>
     </view>
-    <view wx:if="{{tabIndex===1}}">
+    <view class="tab-content" wx:if="{{tabIndex===0}}">
+        <view class="activity-item" wx:for-items="{{activityDataList}}" wx:for-index="index" wx:key="{{index}}">
+            <view class="item-user">
+                <image style="width:30px;height:30px" class="avatar" mod="cover"  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527651936371&di=4adbcd1a13da21bae489a750bc72eaae&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca807e7845fe922397dda14483ad.jpg"></image>
+                <view class="item-user-info">{{item.userName}}<text> 2018-06-02 20:59</text></view>
+            </view>
+            <view class="item-title"><text>{{item.title}}</text></view>
+            <view class="item-desctiption"><text>{{item.description}}</text></view>
+        </view>
+    </view>
+    <view class="tab-content" wx:else>
 
         <view class="title"><text>管理员（4）</text></view>
         <view class="tab-detail">
-            <view wx:for-items="{{[1,1,1]}}" class="list-item">
+            <view wx:for-items="{{[1,1,1]}}" class="list-item" wx:for-index="index" wx:key="{{index}}">
                 <view class="list-item-img">
                     <image mod="cover" class="logo"
                            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527651936371&di=4adbcd1a13da21bae489a750bc72eaae&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca807e7845fe922397dda14483ad.jpg"></image>
                 </view>
                 <view class="list-item-info">
-                    <view><text>昵称：寒云</text></view>
                     <view><text>昵称：寒云</text></view>
                     <view><text>座右铭：卑鄙是卑鄙的通行证 高尚是高尚的墓志铭</text></view>
                 </view>
@@ -63,13 +72,12 @@
         </view>
         <view class="title"><text>成员（16）</text></view>
         <view class="tab-detail">
-            <view wx:for-items="{{[1,1,1,11,1,1,1,1]}}" class="list-item">
+            <view wx:for-items="{{[1,1,1,11,1,1,1,1]}}" class="list-item" wx:for-index="index" wx:key="{{index}}">
                 <view class="list-item-img">
                     <image mod="cover" class="logo"
                            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527651936371&di=4adbcd1a13da21bae489a750bc72eaae&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca807e7845fe922397dda14483ad.jpg"></image>
                 </view>
                 <view class="list-item-info">
-                    <view><text>昵称：寒云</text></view>
                     <view><text>昵称：寒云</text></view>
                     <view><text>座右铭：卑鄙是卑鄙的通行证 高尚是高尚的墓志铭</text></view>
                 </view>

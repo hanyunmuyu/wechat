@@ -88,3 +88,42 @@
 .list-item-info {
     margin-left: 9px;
 }
+
+.tab-content{
+    width: 100%;
+}
+
+
+.activity-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+.activity-item .item-title{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin: 6px;
+}
+.activity-item .item-desctiption{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    margin: 2px;
+}
+.activity-item .item-user{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 2px;
+}
+.avatar{
+    border-radius: 50%;
+}
+.item-user-info{
+    flex: 1;
+    font-size: 12px;
+    margin: 6px;
+}
