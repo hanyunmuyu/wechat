@@ -11,17 +11,17 @@ Page({
                 src: '/images/club.png',
                 url: "/pages/club-list/index"
             }
-            // ,
-            // {
-            //     text: '热议',
-            //     src: '/images/comment.png',
-            //     url: "/pages/school/index"
-            // },
-            // {
-            //     text: '问答',
-            //     src: '/images/school.png',
-            //     url: "/pages/school/index"
-            // }
+            ,
+            {
+                text: '热议',
+                src: '/images/comment.png',
+                url: "/pages/school/index"
+            },
+            {
+                text: '问答',
+                src: '/images/qa.png',
+                url: "/pages/school/index"
+            }
         ],
         dataList: [
             {

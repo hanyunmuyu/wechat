@@ -1,14 +1,14 @@
 {
   "pages": [
     "pages/explore/index",
+    "pages/user/index",
     "pages/club-detail/index",
     "pages/club-list/index",
     "pages/index/index",
     "pages/school-detail/index",
     "pages/school/index",
     "pages/school-player/index",
-    "pages/school-list/index",
-    "pages/user/index"
+    "pages/school-list/index"
   ],
   "window": {
     "backgroundTextStyle": "red",

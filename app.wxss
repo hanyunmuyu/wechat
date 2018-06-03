@@ -8,3 +8,6 @@
     box-sizing: border-box;
     padding: 0 6px;
 }
+.avatar{
+    border-radius: 50%;
+}

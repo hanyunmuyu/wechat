@@ -1,14 +1,72 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录</button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="user">
+    <view class="user-info">
+      <view>
+        <image class="avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528002698816&di=e896455a1590ee0474433914ea7e7025&imgtype=0&src=http%3A%2F%2Fpic26.nipic.com%2F20130115%2F4853121_224328737000_2.jpg"></image>
+      </view>
+      <view class="user-nickname"><text>寒云</text><image src="/images/edit.png"></image></view>
+    </view>
+    <view class="user-about">
+      <view class="user-about-item">
+        <view>
+          <text>10</text>
+        </view>
+        <view>
+          <text>校园</text>
+        </view>
+      </view>
+      <view class="user-about-item">
+        <view>
+          <text>10</text>
+        </view>
+        <view>
+          <text>社团</text>
+        </view>
+      </view>
+      <view class="user-about-item">
+        <view>
+          <text>10</text>
+        </view>
+        <view>
+          <text>同学</text>
+        </view>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="user-about-list">
+    <view class="list-item">
+      <view><image src="/images/comment.png"></image></view>
+      <view class="item-title"><text>我的热议</text></view>
+      <view ><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view><image src="/images/qa.png"></image></view>
+      <view class="item-title"><text>我的问答</text></view>
+      <view ><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view><image src="/images/collection.png"></image></view>
+      <view class="item-title"><text>我的收藏</text></view>
+      <view><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view><image src="/images/club.png"></image></view>
+      <view class="item-title"><text>我的社团</text></view>
+      <view><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view><image src="/images/share.png"></image></view>
+      <view class="item-title"><text>分享</text></view>
+      <view><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view class="item-title"><text>关于我们</text></view>
+      <view><image src="/images/more.png"></image></view>
+    </view>
+    <view class="list-item">
+      <view class="item-title"><text>加入我们</text></view>
+      <view><image src="/images/more.png"></image></view>
+    </view>
   </view>
 </view>
 
