@@ -1,11 +1,13 @@
 <view class="container">
   <view class="user">
-    <view class="user-info">
-      <view>
-        <image class="avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528002698816&di=e896455a1590ee0474433914ea7e7025&imgtype=0&src=http%3A%2F%2Fpic26.nipic.com%2F20130115%2F4853121_224328737000_2.jpg"></image>
+    <navigator url="/pages/user-edit/index">
+      <view class="user-info">
+        <view>
+          <image class="avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528002698816&di=e896455a1590ee0474433914ea7e7025&imgtype=0&src=http%3A%2F%2Fpic26.nipic.com%2F20130115%2F4853121_224328737000_2.jpg"></image>
+        </view>
+        <view class="user-nickname"><text>寒云</text><image src="/images/edit.png"></image></view>
       </view>
-      <view class="user-nickname"><text>寒云</text><image src="/images/edit.png"></image></view>
-    </view>
+    </navigator>
     <view class="user-about">
       <view class="user-about-item">
         <view>

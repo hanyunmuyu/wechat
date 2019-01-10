@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/explore/index",
     "pages/user/index",
+    "pages/user-edit/index",
+    "pages/explore/index",
     "pages/club-detail/index",
     "pages/club-list/index",
     "pages/index/index",
